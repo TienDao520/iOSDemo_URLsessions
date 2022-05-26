@@ -20,7 +20,13 @@ class DataStore {
     //path "/photos"
     // queryItems is nill array are Query Parameters in URL ?name=Branch&products=[Journeys,Email,Universal%20Ads]
     
-    func createURLComponents(host:String,path:String,queryItems: [URLQueryItem]?) -> URLComponents? {
+    
+    
+    func createURLComponents(host:String,path:String,queryItems: [URLQueryItem]?) -> URLComponents?
+    
+    //Using this just incase you need to ignore the key of input parameters
+//    func createURLComponents(_ host:String,_ path:String,_ queryItems: [URLQueryItem]?) -> URLComponents?
+    {
         
         //URLComponents: A structure that parses URLs into and constructs URLs from their constituent parts.
         var components = URLComponents()
@@ -41,6 +47,23 @@ class DataStore {
         if let params = params {
             queryItems.append(contentsOf: params.map{URLQueryItem(name: $0.key, value: $0.value)})
         }
+        
+        // create componentURL using host, path and queryItems
+        guard let componentURL = createURLComponents(host: hostURl,path: path,queryItems: queryItems ) else {
+            
+            return
+        }
+        
+        //validate URL if the url is not valide will terminate the app
+        guard let validURL = componentURL.url else {
+            print("URL creation failed...")
+            
+            return
+        }
+        
+        //Create URL Request
+        var request = URLRequest(url:validURL)
+        
     }
     
 }
