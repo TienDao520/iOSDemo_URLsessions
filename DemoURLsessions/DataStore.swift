@@ -67,8 +67,14 @@ class DataStore {
         //specify Get HTTP method
         request.httpMethod = "GET"
         
-        
-        
+        urlSession.dataTask(with: request) { (data, response, error) in
+            //test http response is between 200..<= 299 this'..<' operator called range operator
+            guard let httpResponse = response as? HTTPURLResponse, 200..<300 ~= httpResponse.statusCode else {
+                return
+            }
+            
+            
+        }.resume()
     }
     
 }
