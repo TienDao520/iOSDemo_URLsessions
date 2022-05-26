@@ -79,6 +79,19 @@ class DataStore {
                 return
             }
             
+            // decoding the data
+            //this is how we do try catch block is swift to prevent app from hard crash
+            do {
+                let decoder = JSONDecoder()
+                let returnStakeholder = try decoder.decode([Photo].self, from: data)
+                DispatchQueue.main.async {
+                    completion(.success(returnStakeholder))
+                }
+            } catch let serializationError {
+                print(serializationError)
+                completion(.failure(serializationError))
+            }
+            
             
         }.resume()
     }
