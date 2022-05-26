@@ -73,6 +73,12 @@ class DataStore {
                 return
             }
             
+            //test data is valid
+            guard let data = data else {
+                completion(.failure(error!))
+                return
+            }
+            
             
         }.resume()
     }
