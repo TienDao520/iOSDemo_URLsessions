@@ -64,6 +64,11 @@ class DataStore {
         //Create URL Request
         var request = URLRequest(url:validURL)
         
+        //specify Get HTTP method
+        request.httpMethod = "GET"
+        
+        
+        
     }
     
 }
