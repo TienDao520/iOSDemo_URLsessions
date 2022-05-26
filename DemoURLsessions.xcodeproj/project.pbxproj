@@ -15,6 +15,7 @@
 		37DF67BE283FF9880022DBE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37DF67BC283FF9880022DBE5 /* LaunchScreen.storyboard */; };
 		37DF67C7284001A20022DBE5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 37DF67C6284001A20022DBE5 /* Kingfisher */; };
 		37DF67C9284004260022DBE5 /* PhotosCollectionCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DF67C8284004260022DBE5 /* PhotosCollectionCollectionViewController.swift */; };
+		37DF67CB2840056F0022DBE5 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DF67CA2840056F0022DBE5 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		37DF67BD283FF9880022DBE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37DF67BF283FF9880022DBE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37DF67C8284004260022DBE5 /* PhotosCollectionCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionCollectionViewController.swift; sourceTree = "<group>"; };
+		37DF67CA2840056F0022DBE5 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				37DF67BF283FF9880022DBE5 /* Info.plist */,
 				37DF67B7283FF9860022DBE5 /* DemoURLsessions.xcdatamodeld */,
 				37DF67C8284004260022DBE5 /* PhotosCollectionCollectionViewController.swift */,
+				37DF67CA2840056F0022DBE5 /* DataStore.swift */,
 			);
 			path = DemoURLsessions;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				37DF67AF283FF9860022DBE5 /* AppDelegate.swift in Sources */,
 				37DF67C9284004260022DBE5 /* PhotosCollectionCollectionViewController.swift in Sources */,
 				37DF67B1283FF9860022DBE5 /* SceneDelegate.swift in Sources */,
+				37DF67CB2840056F0022DBE5 /* DataStore.swift in Sources */,
 				37DF67B9283FF9860022DBE5 /* DemoURLsessions.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
