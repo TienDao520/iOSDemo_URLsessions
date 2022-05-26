@@ -21,6 +21,8 @@ class DataStore {
     // queryItems is nill array are Query Parameters in URL ?name=Branch&products=[Journeys,Email,Universal%20Ads]
     
     func createURLComponents(host:String,path:String,queryItems: [URLQueryItem]?) -> URLComponents? {
+        
+        //URLComponents: A structure that parses URLs into and constructs URLs from their constituent parts.
         var components = URLComponents()
         components.scheme = "https"
         components.host = host
@@ -29,6 +31,16 @@ class DataStore {
         return components
     }
     
-
+    //Get photo data function
+    func getData( hostURl:String ,path: String, params: [String: String]?, completion: @escaping (Result<[Photo], Error>) -> Void){
+        
+        //get parameters
+        //A single name-value pair from the query portion of a URL.
+        var queryItems = [URLQueryItem(name: "api_key", value: apikey)]
+        
+        if let params = params {
+            queryItems.append(contentsOf: params.map{URLQueryItem(name: $0.key, value: $0.value)})
+        }
+    }
     
 }
