@@ -17,6 +17,7 @@
 		37DF67C9284004260022DBE5 /* PhotosCollectionCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DF67C8284004260022DBE5 /* PhotosCollectionCollectionViewController.swift */; };
 		37DF67CB2840056F0022DBE5 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DF67CA2840056F0022DBE5 /* DataStore.swift */; };
 		37DF67CD28400A6D0022DBE5 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DF67CC28400A6D0022DBE5 /* Photo.swift */; };
+		37DF67CF284014DB0022DBE5 /* PhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DF67CE284014DB0022DBE5 /* PhotosDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		37DF67C8284004260022DBE5 /* PhotosCollectionCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionCollectionViewController.swift; sourceTree = "<group>"; };
 		37DF67CA2840056F0022DBE5 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		37DF67CC28400A6D0022DBE5 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		37DF67CE284014DB0022DBE5 /* PhotosDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				37DF67C8284004260022DBE5 /* PhotosCollectionCollectionViewController.swift */,
 				37DF67CA2840056F0022DBE5 /* DataStore.swift */,
 				37DF67CC28400A6D0022DBE5 /* Photo.swift */,
+				37DF67CE284014DB0022DBE5 /* PhotosDataSource.swift */,
 			);
 			path = DemoURLsessions;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37DF67CD28400A6D0022DBE5 /* Photo.swift in Sources */,
+				37DF67CF284014DB0022DBE5 /* PhotosDataSource.swift in Sources */,
 				37DF67AF283FF9860022DBE5 /* AppDelegate.swift in Sources */,
 				37DF67C9284004260022DBE5 /* PhotosCollectionCollectionViewController.swift in Sources */,
 				37DF67B1283FF9860022DBE5 /* SceneDelegate.swift in Sources */,
